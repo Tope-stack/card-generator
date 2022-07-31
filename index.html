@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Altschool Student Card Generator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <form action="">
+            <h3>Fill in your details</h3>
+
+
+            <label>Full Name</label>
+            <input type="text" id="" placeholder="">
+            <label>Date of Birth</label>
+            <input type="text" id="inBirth" placeholder="">
+            <label>Track</label>
+            <input type="text" id="inTrack" placeholder="Track">
+            <label>Year</label>
+            <input type="text" id="" placeholder="">
+            <label>Student ID</label>
+            <input type="text" id="inNum" placeholder="ID Number">
+            
+
+
+            <label for="file" class="upload">Upload an Image</label>
+            <br>
+            <!-- <span>Choose one</span> -->
+            <input type="file" id="file" accept="image/*" onchange="loadImage(event)">
+        </form>
+
+        <button type="submit" id="preview">Preview</button>
+
+        <div class="box">
+            <div class="card" id="result">
+                <header id="head">
+                    <div class="camp">
+                        <h4>Campus Card</h4>
+                        <span>Software Developer</span>
+                    </div>
+                    <img src="altschool.svg" id="logo" alt="">
+                </header>
+
+                <div class="content">
+                    <img src="" id="imgDisplayed">
+
+                    <ul>
+                        <li id="name"></li>
+                        <li id="birth"></li>
+                        <li id="trackYear"></li>
+                        <li>Id no. <span id="num"></span></li>
+                    </ul>
+
+                    <button id="button">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
